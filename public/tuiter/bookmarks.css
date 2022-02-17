@@ -66,6 +66,9 @@ li {
     border-bottom: 2px solid rgb(29,161,242);
 }
 
+.wd-color-red-selected{
+    color:rgb(255,0,0);
+}
 .wd-font-color-selected {
     color: rgb(29,161,242);
 }
@@ -82,7 +85,17 @@ li {
 /*.wd-border-fat {*/
 /*    padding-right: 30px;*/
 /*}*/
+.wd-space{
+    margin-left: 200px;
+}
 
+.wd-space2{
+    margin-left: 406px;
+}
+
+.wd-space3{
+    margin-left: 250px;
+}
 
 .wd-vl{
     border-left-style: solid;
@@ -190,6 +203,10 @@ html, body {
     padding: 16px;
 }
 
+.wd-padding2{
+    padding: 12px;
+}
+
 
 
 /*.wd-pos-absolute-100-20 {*/
@@ -281,6 +298,11 @@ html, body {
 .wd-pads-up-right {
     padding-bottom: 12px;
     padding-right: 12px;
+}
+
+.wd-pads-bottom-left {
+    padding-bottom: 50px;
+    padding-left: 50px;
 }
 
 .wd-css-pic {

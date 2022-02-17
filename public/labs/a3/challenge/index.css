@@ -237,7 +237,7 @@
     .media-body {
         background-color: yellow;
     }
-    .media-query {
+    .media-query1 {
         background-color: red;
         color: white;
     }
@@ -256,16 +256,16 @@
     }
 }
 
-/*@media (min-width: 1200px) and (max-width: 1800px) {*/
-/*    body {*/
-/*        background-color: red;*/
-/*        color: white;*/
-/*    }*/
-/*    .media-query {*/
-/*        background-color: blue;*/
-/*        color: white;*/
-/*    }*/
-/*}*/
+@media (min-width: 1200px) and (max-width: 1800px) {
+    body {
+        background-color: red;
+        color: white;
+    }
+    .media-query {
+        background-color: blue;
+        color: white;
+    }
+}
 
 
 
