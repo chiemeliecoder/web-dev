@@ -157,6 +157,7 @@ html, body {
 
 .wd-font-size2{
     font-size: 13px;
+    width:fit-content;
 }
 
 .wd-selector {

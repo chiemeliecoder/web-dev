@@ -338,3 +338,6 @@ ul {
     top: 5px;
     right: 660px;
 }
+.bg-darkgray{
+    background-color: rgb(110, 118, 125);
+}
