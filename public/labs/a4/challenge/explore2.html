@@ -1,80 +1,131 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
 <head>
-  <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <script src="../../../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <meta charset="UTF-8">
   <title>Title</title>
-  <link href="explore2.css" rel = "stylesheet"/>
+  <link href="explore2.css" rel="stylesheet"/>
 </head>
-<body class ="wd-bg-color-body container-fluid">
-<div class="row">
-<div class="col-12">
-  <div class="col-12 text-center">
-    <input class="wd-justify wd-align-center wd-direction-box wd-font-color-textarea wd-border-solid wd-border-grey wd-bg-textspace-black wd-border-thin
-                  wd-rounded-corners-top wd-margin wd-searchbar-opacity wd-font-size "
-           type="text"
-           placeholder=" Search Tuiter..."
-           style="height:40px"
-           size="100%"
-           id="search-bar"/>
-  </div>
-  <div class="m-6">
-    <div class="col-12 text-center">
-      <ul>
-        <li class="li-solid-lines active"> <a href="foryou.html" class="wd-font-color-headings wd-font-color-selected"> <strong class="wd-padding">For You</strong> </a> </li>
-        <li class="li-solid-lines"> <a href="trending.html" class="wd-font-color-headings"><strong class="wd-padding">Trending</strong> </a> </li>
-        <li class="li-solid-lines"> <a href="covid19.html" class="wd-font-color-headings"><strong class="wd-padding">Covid-19</strong> </a> </li>
-        <li class="li-solid-lines"> <a href="news.html" class="wd-font-color-headings"><strong class="wd-padding">News</strong> </a> </li>
-        <li class="li-solid-lines"> <a href="sport.html" class="wd-font-color-headings"><strong class="wd-padding">Sport</strong> </a> </li>
-        <li class="li-solid-lines"> <a href="entertainment.html" class="wd-font-color-headings"><strong class="wd-padding">Entertainment</strong> </a> </li>
+
+<body class="wd-bg-color-body container">
+  <div class="row">
+    <!-- Menu -->
+    <div class="wd-main-menu col-sm-1 col-md-2 col-lg-2">
+      <div class="list-group">
+        <i class="fab fa-twitter list-group-item bg-black"></i>
+        <i class="fa fa-house-user list-group-item bg-black">
+          <a href="../../../tuiter/home.html" class="wd-font-color"> Home</a></i>
+        <i class="fa fa-hashtag list-group-item bg-black">
+          <a href="#" class="wd-font-color d-sm-none d-xl-inline-block"> Explore</a></i>
+        <i class="fa fa-bell  list-group-item bg-black"><a href="notification.html" class="wd-font-color">
+            Notification</a></i>
+        <i class="fa fa-envelope  list-group-item bg-black"><a href="message.html" class="wd-font-color">
+            Message</a></i>
+        <i class="fa fa-bookmark list-group-item bg-black"> <a href="../../../tuiter/bookmarks.html"
+            class="wd-font-color">
+            Bookmarks</a></i>
+        <i class="fa fa-list list-group-item bg-black"><a href="lists.html" class="wd-font-color">
+            List</a></i>
+        <i class="fa fa-user list-group-item bg-black"><a href="../../../tuiter/profile.html" class="wd-font-color">
+            Profile</a></i>
+        <i class="fa fa-caret-down list-group-item bg-black"><a href="#" class="wd-font-color">
+            More</a></i>
+        <button class="btn btn-primary wd-round-button"><a href="../../../tuiter/tuits.html"
+            class="wd-font-color">Tuit</a></button>
+      </div>
+    </div>
+    <!-- Main Content -->
+    <div class="col-7 border rounded px-0">
+      <div class="col-12">
+        <input class="border border-2 rounded-pill opacity-25" type="text" placeholder="        Search Tuiter..."
+          id="search-bar" size="80%"/>
+        <i class="fa fa-search wd-pos-relative-nudge-up-left" style="color: white"></i>
+        <i class="fa fa-cog" style="color: white"></i>
+      </div>
+      <div class="col-12">
+        <ul class="pt-3 mb-3">
+          <li class="wd-main-menu">
+            <a class="li-solid-lines active" aria-current="page" href="#">For You</a>
+          </li>
+          <li class="li-solid-lines">
+            <a href="trending.html" class="nav-link">Trending</a>
+          </li>
+          <li class="li-solid-lines">
+            <a href="covid19.html" class="nav-link">Covid-19</a>
+          </li>
+          <li class="li-solid-lines">
+            <a href="news.html" class="nav-link">News</a>
+          </li>
+          <li class="li-solid-lines">
+            <a href="sport.html" class="nav-link">Sport</a>
+          </li>
+          <li class="li-solid-lines">
+            <a href="entertainment.html" class="nav-link">Entertainment</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12">
+        <img class="img-fluid rounded mx-auto" src="https://pbs.twimg.com/media/FJDeLPsWQAEnbNU?format=jpg&name=small" width="100%" />
+      </div>
+      <div class="border-bottom">
+        <span class="wd-selector fs-6">Trending in anime</span></br>
+          <strong class="wd-font-color fs-3">Attack on Titans: Eren Yeager vs Reiner Braun final fight who is the better fighter?</strong></br>
+      </div>
+
+      <div class="mt-4">
+        <span class="wd-selector fs-6">Trending in R&B & soul</span></br>
+        <strong class="wd-font-color">R Kelly</strong></br>
+        <span class="wd-selector wd-font-size2">18.2k Tuits</span>
+      </div>
+
+      <div class="mt-4">
+        <span class="wd-selector fs-6">Trending in R&B & soul</span></br>
+        <strong class="wd-font-color">Chloe</strong></br>
+        <span class="wd-selector wd-font-size2">Trending with Halle</span>
+      </div>
+
+      <div class="mt-4">
+        <p class="wd-font-color wd-border-fat"><img src="https://pbs.twimg.com/profile_images/1098244578472280064/gjkVMelR_400x400.png"
+                                                    width="20px" height="20px"/>
+          The New York Times<img src="https://www.citypng.com/public/uploads/preview/-516153360704du7uuqwcw.png" width="15px" height="15px"/> <span class="wd-selector wd-font-size2">.Yesterday</span></br>
+          <strong>CNN's Cuomo conundrum: A star anchor with a brother in trouble</strong>
+          <img class = "wd-float-right wd-rounded-corners-all-around" src="https://www.syracuse.com/resizer/tUICjsj8G8YqDA_CF1LK26XQCLc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/IRIBT565W5GAJG5VIHNRUMIKCA.jpg" width="100px" height="100px">
+        </p>
+
+      </div>
+
+    </div>
+    <!-- Sidebar -->
+    <div class="col-3">
+      <ul class="list-group border">
+        <li class="list-group-item bg-black wd-font-color fs-3 border-bottom">who to follow</li>
+        <li class="list-group-item bg-black wd-font-color border-bottom">
+          <img class="rounded-circle" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
+            width="60px" height="60px" />
+          Java
+        </li>
+        <li class="list-group-item bg-black wd-font-color">
+          <img class="rounded-circle" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
+                                         width="60px" height="60px" />A second item</li>
+        <li class="list-group-item bg-black wd-font-color">Show more</li>
       </ul>
     </div>
   </div>
 
-    <div class="m-6">
-      <div class="col-12  text-center">
-        <img class="wd-rounded-corners-all-around wd-bottom" src="https://pbs.twimg.com/media/FJDeLPsWQAEnbNU?format=jpg&name=small" width="804px" height="364px"/>
-      </div>
-    </div>
 
-</div>
-
-<div class="m-2">
-  <div class="col-2 ps-5 pe-5 col-xl-2 col-lg-1 col-md-1 col-sm-2 mb-2">
-    <div class="list-group">
-      <i class="fab fa-twitter list-group-item bg-black" style="color: white"></i>
-      <i class="fa fa-house-user list-group-item bg-black" style="color: white"><a href="../../../tuiter/home.html" style="text-decoration: none" class="wd-font-color"> Home</a></i>
-      <i class="fa fa-hashtag list-group-item bg-black" style="color: white"><a href="#" style="text-decoration: none" class="wd-font-color"> Explore</a></i>
-      <i class="fa fa-bell  list-group-item bg-black" style="color: white"><a href="notification.html" style="text-decoration: none" class="wd-font-color"> Notification</a></i>
-      <i class="fa fa-envelope  list-group-item bg-black" style="color: white"><a href="message.html" style="text-decoration: none" class="wd-font-color"> Message</a></i>
-      <i class="fa fa-bookmark list-group-item bg-black" style="color: white"> <a href="../../../tuiter/bookmarks.html" style="text-decoration: none" class="wd-font-color"> Bookmarks</a></i>
-      <i class="fa fa-list list-group-item bg-black" style="color: white"><a href="lists.html" style="text-decoration: none" class="wd-font-color"> List</a></i>
-      <i class="fa fa-user list-group-item bg-black" style="color: white"><a href="../../../tuiter/profile.html" style="text-decoration: none" class="wd-font-color"> Profile</a></i>
-      <i class="fa fa-caret-down list-group-item bg-black" style="color: white"><a href="#" style="text-decoration: none" class="wd-font-color"> More</a></i>
-      <button class="btn btn-primary wd-round-button"><a href="../../../tuiter/tuits.html" style="text-decoration: none" class="wd-font-color">Tuit</a></button>
-    </div>
-  </div>
-  </div>
-
-
-
-<div class="row m-6 text-center">
-  <div class="wd-padding">
-    <p class="wd-font-color wd-border-fat">
-      <span class="wd-selector wd-font-size2">Trending in science</span></br>
-      <strong>Starship</strong></br>
-      <span class="wd-selector wd-font-size2">55.5k Tuits</span>
-    </p>
-    <img class = "wd-rounded-corners-all-around" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" width="100px" height="60px" />
-  </div>
-</div>
-
-
-
-
-</div>
+<!--  <ul>-->
+<!--    <li class="li-solid-lines active"> <a href="foryou.html" class="wd-font-color-headings wd-font-color-selected"> <strong class="wd-padding">For You</strong> </a> </li>-->
+<!--    <li class="li-solid-lines"> <a href="trending.html" class="wd-font-color-headings"><strong class="wd-padding">Trending</strong> </a> </li>-->
+<!--    <li class="li-solid-lines"> <a href="covid19.html" class="wd-font-color-headings"><strong class="wd-padding">Covid-19</strong> </a> </li>-->
+<!--    <li class="li-solid-lines"> <a href="news.html" class="wd-font-color-headings"><strong class="wd-padding">News</strong> </a> </li>-->
+<!--    <li class="li-solid-lines"> <a href="sport.html" class="wd-font-color-headings"><strong class="wd-padding">Sport</strong> </a> </li>-->
+<!--    <li class="li-solid-lines"> <a href="entertainment.html" class="wd-font-color-headings"><strong class="wd-padding">Entertainment</strong> </a> </li>-->
+<!--  </ul>-->
 
 </body>
+
 </html>

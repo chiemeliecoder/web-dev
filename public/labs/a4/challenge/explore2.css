@@ -322,3 +322,19 @@ html, body {
     width: 100%;
     z-index: -1;
 }
+/* CSS */
+ul {
+    padding: 0px;
+}
+.wd-main-menu a {
+    text-decoration: none;
+}
+.wd-main-menu i {
+    color: white;
+}
+
+.wd-pos-relative-nudge-up-left {
+    position: relative;
+    top: 5px;
+    right: 660px;
+}

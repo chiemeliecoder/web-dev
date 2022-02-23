@@ -119,7 +119,11 @@ html, body {
     margin-top: 0px;
     height: 110%;
 }
-
+.wd-pos-relative-nudge-up-left2 {
+    position: relative;
+    top: 5px;
+    right: 700px;
+}
 .wd-pos-relative-nudge-bottom-left {
     position: relative;
     bottom: 55px;
@@ -290,4 +294,24 @@ html, body {
     position: absolute;
     width: 100%;
     z-index: -1;
+}
+
+.wd-bottom-lefts {
+    position: absolute;
+    bottom: 230px;
+    left:340px
+}
+
+ul {
+    padding: 0px;
+}
+.wd-main-menu a {
+    text-decoration: none;
+}
+
+
+.wd-pos-relative-nudge-up-left {
+    position: relative;
+    top: 5px;
+    right: 660px;
 }

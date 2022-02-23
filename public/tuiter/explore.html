@@ -1,109 +1,135 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+
 <head>
+  <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <meta charset="UTF-8">
   <title>Title</title>
-  <link href="explore.css" rel = "stylesheet"/>
+  <link href="explore.css" rel="stylesheet"/>
 </head>
-<body class ="wd-bg-color-body">
-<div class="wd-vl wd-height">
 
-<div>
-  <input class="wd-font-color-textarea wd-border-solid wd-border-grey wd-bg-textspace-black wd-border-thin
-                wd-rounded-corners-top wd-margin wd-searchbar-opacity wd-font-size "
-         type="text"
-         placeholder="Search Tuiter..."
-         style="height:30px"
-         size="100%"
-         id="search-bar"/>
-  <img class="wd-pos-relative-nudge-up-right" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png"
-       width="20px"
-       height="20px"/>
-  <a href="explore-settings.html"><img class="wd-pos-relative-nudge-down-right" src="https://i.pinimg.com/736x/fc/02/b0/fc02b08d4eaf00245c7c7e2ea8248f64.jpg"
-       width="40px"
-       height="40px"/></a>
+<body class="container">
+<div class="row">
+  <!-- Menu -->
+  <div class="wd-main-menu col-sm-1 col-md-2 col-lg-2">
+    <div class="list-group">
+      <i class="fab fa-twitter list-group-item"></i>
+      <a href="home.html" class="list-group-item list-group-item-action"><i class="fa fa-house-user"><span class="d-sm-none d-xl-inline-block">Home</span></i></a>
+      <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-hashtag"><span class="d-sm-none d-xl-inline-block"> Explore</span></i></a>
+      <a href="notification.html" class="list-group-item list-group-item-action"><i class="fa fa-bell"><span class="d-sm-none d-xl-inline-block"> Notification</span></i></a>
+      <a href="message.html" class="list-group-item list-group-item-action"><i class="fa fa-envelope"><span class="d-sm-none d-xl-inline-block"> Message</span></i></a>
+      <a href="bookmarks.html" class="list-group-item list-group-item-action"><i class="fa fa-bookmark"> <span class="d-sm-none d-xl-inline-block"> Bookmarks</span></i></a>
+      <a href="lists.html" class="list-group-item list-group-item-action"><i class="fa fa-list"><span class="d-sm-none d-xl-inline-block"> List</span></i></a>
+      <a href="profile.html"class="list-group-item list-group-item-action"><i class="fa fa-user"><span class="d-sm-none d-xl-inline-block"> Profile</span></i></a>
+      <a href="#"class="list-group-item list-group-item-action"><i class="fa fa-caret-down"><span class="d-sm-none d-xl-inline-block"> More</span></i></a>
+      <button class="btn btn-primary rounded-pill"><a href="tuits.html" class="wd-font-color">Tuit</a></button>
+    </div>
+  </div>
+  <!-- Main Content -->
+  <div class="col-7 border rounded px-0 border-darkgray">
+    <div class="col-12">
+      <input class="border border-2 rounded-pill  wd-border-solid border-3 border-dark" type="text" placeholder="        Search Tuiter..."
+             id="search-bar" size="90%"/>
+      <i class="fa fa-search wd-pos-relative-nudge-up-left2"></i>
+      <i class="fa fa-cog" style="color: #0a53be"></i>
+    </div>
+    <div class="col-12">
+      <ul class="nav nav-tabs pt-3 mb-3">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">For You</a>
+        </li>
+        <li class="nav-item">
+          <a href="" href="trending.html" class="nav-link" href="#">Trending</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link" href="#">Covid-19</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">News</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Sport</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Entertainment</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-12">
+      <img class="img-fluid rounded mx-auto" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" width="100%" />
+      <strong class="fs-3 wd-bottom-lefts wd-font-color">SpaceX's Starship</strong>
+    </div>
+
+    <div class="mt-4 border-bottom">
+      <img class = "d-flex wd-float-right wd-rounded-corners-all-around" src="https://w7.pngwing.com/pngs/186/205/png-transparent-react-native-react-logos-brands-icon.png" width="100px" height="100px">
+      <span class="wd-selector fs-6">Web Development</span></br>
+      <strong>ReactJS</strong></br>
+      <strong>React.js is a component based front end library that makes it very easy</br>
+        to build Single Page Applications or SPAs </strong></br>
+      <span class="wd-selector wd-font-size2">18.2k Tuits</span>
+    </div>
+
+    <div class="mt-4 border-bottom">
+      <img class = "d-flex wd-float-right wd-rounded-corners-all-around" src="https://miro.medium.com/max/720/1*Aih9FwHjvM6AEL1aBh6W2g.png" width="100px" height="100px">
+      <span class="wd-selector fs-6">Trending in R&B & soul</span></br>
+      <strong>JavaScript</strong></br>
+      <strong>JavaScript is programming language</br> that can run on browsers as well as desktops</strong></br>
+      <span class="wd-selector wd-font-size2">123K Tuits</span>
+
+    </div>
+
+    <div class="mt-4 border-bottom mb-4">
+      <img class = "d-flex wd-float-right wd-rounded-corners-all-around" src="https://mpng.subpng.com/20180704/zoa/kisspng-jquery-ui-javascript-web-browser-pasargad-5b3d093837a4d4.5712269815307267122279.jpg" width="100px" height="100px">
+      <span class="wd-selector fs-6">Web Development</span></br>
+      <strong>JQuery</strong></br>
+      <strong>Query is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation,</br> as well as event handling, CSS animation, and Ajax.</strong></br>
+      <span class="wd-selector wd-font-size2">123K Tuits</span>
+    </div>
+
+    <div class="mt-4 border-bottom">
+      <img class = "d-flex wd-float-right wd-rounded-corners-all-around" src="https://media.istockphoto.com/vectors/nodejs-vector-logo-backend-programming-in-javascript-server-vector-id1195857274?k=20&m=1195857274&s=170667a&w=0&h=k8oHsv3ehrvhviozLlvhEjGHweiHU7hbBv7bHEkgUqc=" width="100px" height="100px">
+      <span class="wd-selector fs-6">Web Development</span></br>
+      <strong>NodeJS</strong></br>
+      <span class="wd-selector wd-font-size2">123K Tuits</span>
+
+    </div>
+
+  </div>
+  <!-- Sidebar -->
+  <div class="col-3">
+    <ul class="list-group">
+      <li class="list-group-item border-bottom"><strong>Who to follow</strong></li>
+      <li class="list-group-item border-bottom d-flex wd-float-inside">
+        <img class="rounded-circle" src="https://www.coveros.com/wp-content/uploads/2014/03/java-logo.jpg"
+             width="60px" height="60px" />
+        <div><strong class="wd-font-size2">Java</strong></br>@java</div>
+        <span><button class="btn btn-primary rounded-pill">Follow</button></span>
+      </li>
+      <li class="list-group-item d-flex wd-float-inside">
+        <img class="rounded-circle " src="https://images.squarespace-cdn.com/content/v1/5ac26ffc372b968231d616c2/1607139089559-XPSM9Z0LEATPE1KMDL6P/Relativity_Black.jpeg?format=2500w"
+             width="60px" height="60px" /><div><strong class="wd-font-size2">Relative Space</strong></br>@Relativespace</div>
+        <span><button class="btn btn-primary rounded-pill ">Follow</button></span></li>
+      <li class="list-group-item d-flex wd-float-inside">
+        <img class="rounded-circle" src="https://cdn.dribbble.com/users/4032404/screenshots/10829807/virgin_galactic_concept_2_4x.png"
+             width="60px" height="60px" /><div><strong class="wd-font-size2">Virgin Galactic</strong></br>@VirginGalactic</div>
+        <span><button class="btn btn-primary rounded-pill">Follow</button></span></li>
+      <li class="list-group-item d-flex wd-float-inside">
+        <img class="rounded-circle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/NASA_Wormball_logo.svg/768px-NASA_Wormball_logo.svg.png?20191111033308"
+             width="60px" height="60px"/><diV><strong class="wd-font-size2">NASA</strong></br> @NASA</div>
+        <span><button class="btn btn-primary rounded-pill">Follow</button></span></li>
+      <li class="list-group-item d-flex wd-float-inside">
+        <img class="rounded-circle" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
+             width="60px" height="60px" /><div><strong class="wd-font-size2">Tesla</strong></br> @Tesla</div>
+        <span><button class="btn btn-primary rounded-pill">Follow</button></span></li>
+      <li class="list-group-item">Show more</li>
+    </ul>
+  </div>
 </div>
-<div class="wd-hr">
-  <ul>
-    <li class="li-solid-lines active"> <a href="foryou.html" class="wd-font-color-headings wd-font-color-selected"> <strong class="wd-padding">For You</strong> </a> </li>
-    <li class="li-solid-lines"> <a href="trending.html" class="wd-font-color-headings"><strong class="wd-padding">Trending</strong> </a> </li>
-    <li class="li-solid-lines"> <a href="covid19.html" class="wd-font-color-headings"><strong class="wd-padding">Covid-19</strong> </a> </li>
-    <li class="li-solid-lines"> <a href="news.html" class="wd-font-color-headings"><strong class="wd-padding">News</strong> </a> </li>
-    <li class="li-solid-lines"> <a href="sport.html" class="wd-font-color-headings"><strong class="wd-padding">Sport</strong> </a> </li>
-    <li class="li-solid-lines"> <a href="entertainment.html" class="wd-font-color-headings"><strong class="wd-padding">Entertainment</strong> </a> </li>
-  </ul>
-</div>
-
-
-
-  <!--create a border for each post, have a div for each post, dont use hr-->
-  <div class="wd-float-inside wd-padding wd-hr">
-  <p class="wd-font-color wd-border-fat">
-    <span class="wd-selector wd-font-size2">Trending in science</span></br>
-    <strong>Starship</strong></br>
-    <span class="wd-selector wd-font-size2">55.5k Tuits</span>
-  </p>
-    <img class = "wd-float-right wd-rounded-corners-all-around" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" width="100px" height="60px" />
-  </div>
-
-  <div class="wd-float-inside wd-padding wd-hr">
-  <p class="wd-font-color wd-border-fat">
-    <span class="wd-selector wd-font-size2">Sport . Trending</span> </br>
-    <strong>Joe Rogan</strong></br>
-    <span class="wd-selector wd-font-size2">5,218 Tuits</span>
-  </p>
-</div>
-
-  <div class="wd-float-inside wd-padding wd-hr">
-  <p class="wd-font-color wd-border-fat">
-    <span class="wd-selector wd-font-size2">Trending in Anime</span> </br>
-    <strong> Tokyo </strong></br>
-    <span class="wd-selector wd-font-size2">182K Tuits</span>
-  </p>
-    <img class = "wd-float-right wd-rounded-corners-all-around" src="https://static2.srcdn.com/wordpress/wp-content/uploads/2021/04/Haikyuu-GetsVolleyballRight-FeatureImage.jpeg"
-         width ="150px" height="82px"/>
-  </div>
-
-  <div class="wd-float-inside wd-padding wd-hr">
-    <p class="wd-font-color wd-border-fat"><img src="https://pbs.twimg.com/profile_images/1098244578472280064/gjkVMelR_400x400.png"
-                                                width="20px" height="20px"/>
-      The New York Times<img src="https://www.citypng.com/public/uploads/preview/-516153360704du7uuqwcw.png" width="15px" height="15px"/> <span class="wd-selector wd-font-size2">.Yesterday</span></br>
-      <strong>CNN's Cuomo conundrum: A star anchor with a brother in trouble</strong>
-    </p>
-    <img class = "wd-float-right wd-rounded-corners-all-around" src="https://www.syracuse.com/resizer/tUICjsj8G8YqDA_CF1LK26XQCLc=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/IRIBT565W5GAJG5VIHNRUMIKCA.jpg" width="100px" height="100px">
-
-  </div>
-
-  <div class="wd-float-inside wd-padding wd-hr">
-    <p class="wd-font-color wd-border-fat">
-      <span class="wd-selector">Covid-19 . LIVE</span></br>
-      <strong>COVID-19: News and updates for Massachusetts</strong>
-    </p>
-    <img class = "wd-float-right wd-rounded-corners-all-around" src="https://pbs.twimg.com/semantic_core_img/1338528565155938305/cRNgnRYl?format=jpg&name=900x900" width="100px" height="100px">
-
-  </div>
-
-  <div class="wd-float-inside wd-padding wd-hr">
-    <p class="wd-font-color wd-border-fat"><img src="https://cdn-images-1.medium.com/max/1200/1*jlC1UcUP2nRoDODcyaMqpA.png"
-                                                width="20px" height="20px"/>
-      Bloomberg Opinion<img src="https://www.citypng.com/public/uploads/preview/-516153360704du7uuqwcw.png" width="15px" height="15px"/> <span class="wd-selector wd-font-size2">.Yesterday</span></br>
-      <strong>Thinking about getting a booster? Read this first.</strong>
-    </p>
-    <img class = "wd-float-right wd-rounded-corners-all-around" src="https://www.hopkinsmedicine.org/-/media/images/health/1_-conditions/coronavirus/covid19-vaccine-johns-hopkins-coronavirus.ashx?h=300&iar=0&mh=300&mw=500&w=500&hash=88FCC8B0AD615A37EB5ECDA3DAEA9EA5" width="100px" height="100px">
-
-  </div>
-
-  <div class="wd-float-inside wd-padding">
-    <p class="wd-font-color wd-border-fat">
-      <span class="wd-selector wd-font-size2">Trending in United States</span> </br>
-      <strong>Wonder Bread</strong></br>
-      <span class="wd-selector wd-font-size2">1,259 Tuits</span>
-    </p>
-  </div>
-
-
-</div>
-
 
 </body>
+
 </html>
