@@ -186,6 +186,10 @@ html, body {
     color: rgb(110, 118, 125);
 }
 
+.wd-selector-blue {
+    color: #1aade7;
+}
+
 .vl {
     position: relative;
     border-left: 1px solid rgb(110, 118, 125);
