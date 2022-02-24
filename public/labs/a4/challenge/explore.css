@@ -330,7 +330,7 @@ ul {
     text-decoration: none;
 }
 .wd-main-menu i {
-    color: white;
+    color: #ffffff;
 }
 
 .wd-pos-relative-nudge-up-left {
@@ -339,5 +339,51 @@ ul {
     right: 660px;
 }
 .bg-darkgray{
-    background-color: rgb(110, 118, 125);
+    background-color: rgb(27, 31, 34);
+}
+
+.border{
+    border: 1px solid #33363e !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #33363e!important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1aade7;
+    border-color: #1aade7;
+}
+
+
+.btn-white {
+    color: #fff;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.wd-font-col{
+    color: black;
+}
+
+.wd-color-cog{
+    color: white;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    width: 90%;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
 }

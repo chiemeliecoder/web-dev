@@ -7,11 +7,11 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
   <meta charset="UTF-8">
   <title>Title</title>
-  <link href="explore2.css" rel="stylesheet"/>
+  <link href="explore.css" rel="stylesheet"/>
 </head>
 
 <body class="wd-bg-color-body container">
-  <div class="row">
+  <div class="row mt-2">
     <!-- Menu -->
     <div class="wd-main-menu col-sm-1 col-md-2 col-lg-2">
       <div class="list-group">
@@ -40,10 +40,15 @@
     <!-- Main Content -->
     <div class="col-7 border rounded px-0">
       <div class="col-12">
-        <input class="border border-2 rounded-pill opacity-25" type="text" placeholder="        Search Tuiter..."
-          id="search-bar" size="80%"/>
-        <i class="fa fa-search wd-pos-relative-nudge-up-left" style="color: white"></i>
-        <i class="fa fa-cog" style="color: white"></i>
+<!--        <input class="border border-2 rounded-pill opacity-25" type="text" placeholder="        Search Tuiter..."-->
+<!--          id="search-bar" size="80%"/>-->
+<!--        <i class="fa fa-search wd-pos-relative-nudge-up-left" style="color: white"></i>-->
+<!--        <i class="fa fa-cog" style="color: white"></i>-->
+        <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control fa fa-cog rounded-pill opacity-25" placeholder="Search Tuiter..."/>
+          <span class="fa fa-cog fa-2x wd-color-cog "></span>
+        </div>
       </div>
       <div class="col-12">
         <ul class="pt-3 mb-3">
@@ -101,17 +106,20 @@
     </div>
     <!-- Sidebar -->
     <div class="col-3">
-      <ul class="list-group bg-darkgray">
-        <li class="list-group-item bg-darkgray wd-font-color fs-3 border-bottom">who to follow</li>
-        <li class="list-group-item bg-darkgray wd-font-color border-bottom">
-          <img class="rounded-circle" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
+      <ul class="list-group d-none d-md-block">
+        <li class="list-group-item bg-darkgray wd-font-color fs-3 border-bottom"><strong>Who to follow</strong></li>
+        <li class="list-group-item bg-darkgray wd-font-color border-bottom border-bottom wd-float-inside">
+          <img class="rounded-circle" src="https://www-images.christianitytoday.com/images/91838.jpg?h=337&w=600"
             width="60px" height="60px" />
-          Java
+          <div class="m-auto p-auto wd-font-size2"><strong>The Bee</strong><i class="fa fa-check"></i></br>@beebabylon</div>
+          <span><button class="btn btn-white  rounded-pill"><span class="wd-font-col">Follow</span></button></span>
         </li>
-        <li class="list-group-item bg-darkgray wd-font-color">
-          <img class="rounded-circle" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg"
-                                         width="60px" height="60px" />A second item</li>
-        <li class="list-group-item bg-black wd-font-color">Show more</li>
+        <li class="list-group-item bg-darkgray wd-font-color border-bottom wd-float-inside">
+          <img class="rounded-circle" src="https://2sai80zhft74386rl1kqxhyw-wpengine.netdna-ssl.com/wp-content/uploads/2021/08/Jack-Posobiec-Headshot.jpg"
+                                         width="60px" height="60px" />
+          <div class="m-auto p-auto wd-font-size2"><strong>Jack Posobiec</strong><i class="fa fa-check"></i></br>@iackposobiec</div>
+          <span><button class="btn btn-white rounded-pill "><span class="wd-font-col">Follow</span></button></span></li>
+        <li class="list-group-item bg-darkgray wd-font-color">Show more</li>
       </ul>
     </div>
   </div>
