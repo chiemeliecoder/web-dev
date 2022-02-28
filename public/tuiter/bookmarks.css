@@ -25,6 +25,8 @@
     border-color: black;
 }
 
+
+
 .wd-border-thin {
     border-width: 4px;
 }
@@ -198,6 +200,8 @@ html, body {
     top: 5px;
     right: 50px;
 }
+
+
 
 .wd-padding{
     padding: 16px;
