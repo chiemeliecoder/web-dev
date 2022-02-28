@@ -1,6 +1,6 @@
 alert('Hello World!');
 
-const NavigationSidebar = () => {
+const NavigationSidebar = (active) => {
   return(`
             <div class="list-group">
                 <a class="list-group-item" href="/"><i class="fab fa-twitter"></i></a>
