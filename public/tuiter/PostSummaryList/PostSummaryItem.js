@@ -2,13 +2,15 @@ const PostSummaryItem =(post) =>{
 
   return(`
         <div>
-           <div class="mt-4 border-bottom">
-                  <img class = "d-flex wd-float-right wd-rounded-corners-all-around" src="${post.image}" width="100px" height="100px">
-                  <span class="wd-selector fs-6">${post.topic}</span></br>
-                  <strong>${post.userName}</strong> <span class="wd-selector wd-font-size2">${post.time}</span></br>
-                  <strong>${post.title} </strong></br>
-                  <span class="wd-selector wd-font-size2">${post.tweets}</span>
-                </div>
+            <li class="list-group-item">
+                 <div class="mt-0">
+                        <img class = "d-flex wd-float-right wd-rounded-corners-all-around" src="${post.image}" width="100px" height="100px">
+                        <span class="wd-selector fs-6">${post.topic}</span></br>
+                        <strong>${post.userName}</strong> <span class="wd-selector wd-font-size2 wd-side2">${post.time}</span></br>
+                        <strong>${post.title} </strong></br>
+                        <span class="wd-selector wd-font-size2">${post.tweets}</span>
+                 </div>
+            </li>
         </div>
 
   `);
