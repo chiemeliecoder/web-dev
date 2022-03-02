@@ -17,10 +17,12 @@ const PostItem =(posts) =>{
           <div class="wd-rounded-corners-all-around wd-hr2">
           <img class="wd-rounded-corners-all-around wd-bottom" src="${posts.image2}" width="100%"/>
       
-          <div class="wd-pads-12px">
-            <p><strong class="wd-font-color wd-padding2">${posts.moretitle}</strong></p>
-          <div class=" wd-selector wd-bottom wd-padding2">${posts.moretopics}</div>
-          </div>
+         
+            
+            ${posts.moretitle != "" ? ` <div class="wd-pads-12px"><p><strong class="wd-font-color wd-padding2">${posts.moretitle}</strong></p><div class=" wd-selector wd-bottom wd-padding2">${posts.moretopics}</div> </div>` : ""}
+   
+          
+         
          </div>
            <div class="wd-flex">
                 <a style="text-decoration: none" href="#">
