@@ -45,6 +45,10 @@ li {
     margin: 0px 10px;
 }
 
+.wd-post-summary-item-wrapper li{
+    margin: 0px;
+}
+
 .li-solid-lines a{
     text-decoration: none;
 }
