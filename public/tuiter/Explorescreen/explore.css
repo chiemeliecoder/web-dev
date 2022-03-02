@@ -16,7 +16,7 @@
     fill: #ea1010;
 }
 
-.wd-color-red-selected{
+.wd-color-red-selected span, .wd-color-red-selected i{
     color:rgb(255,0,0);
 }
 
@@ -387,4 +387,9 @@ ul {
     position: relative;
     top: 50px;
     right: 220px;
+}
+
+.wd-social-icon-wrapper a{
+    text-decoration: none;
+    color: grey;
 }

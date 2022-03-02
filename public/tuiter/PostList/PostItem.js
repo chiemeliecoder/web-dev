@@ -15,32 +15,29 @@ const PostItem =(posts) =>{
           </div>
           </div>
           <div class="wd-rounded-corners-all-around wd-hr2">
-          <img class="wd-rounded-corners-all-around wd-bottom" src="${posts.image2}" width="100%"/>
+          <img class="wd-rounded-corners-all-around" src="${posts.image2}" width="100%"/>
       
-         
-            
-            ${posts.moretitle != "" ? ` <div class="wd-pads-12px"><p><strong class="wd-font-color wd-padding2">${posts.moretitle}</strong></p><div class=" wd-selector wd-bottom wd-padding2">${posts.moretopics}</div> </div>` : ""}
-   
           
+         ${posts.moretitle != "" ? `<div class="wd-pads-12px pt-3"><p><strong class="wd-font-color wd-padding2">${posts.moretitle}</strong></p><div class=" wd-selector wd-bottom wd-padding2">${posts.moretopics}</div> </div>` : ""}
          
          </div>
-           <div class="wd-flex">
-                <a style="text-decoration: none" href="#">
-                  <i class="fa-solid fa-heart wd-color-red-selected"></i>
+           <div class="wd-social-icon-wrapper wd-flex p-2">
+                <a  href="#" class="wd-color-red-selected">
+                  <i class="fa-solid fa-heart"></i>
                   <span>${posts.likes}</span>
                 </a>
         
-                <a style="text-decoration: none"   href="${posts.url}">
+                <a href="${posts.url}">
                   <i class="fa-solid fa-comment"></i>
                   <span>${posts.comments}</span>
                 </a>
         
-                <a style="text-decoration: none" href="${posts.url}">
+                <a href="${posts.url}">
                   <i class="fa-solid fa-retweet"></i>
                   <span>${posts.retweet}</span>
                 </a>
         
-                <a style="text-decoration: none" href="${posts.url}">
+                <a href="${posts.url}">
                   <i class="fa-solid fa-arrow-up-from-bracket"></i>
                 </a>
            </div>
