@@ -20,10 +20,10 @@ const ExploreComponent = () => {
                 <a className="nav-link active" aria-current="page" href="#">For You</a>
               </li>
               <li className="nav-item">
-                <a href="" href="trending.html" className="nav-link" href="#">Trending</a>
+                <a href=""  className="nav-link" >Trending</a>
               </li>
               <li className="nav-item">
-                <a href="" className="nav-link" href="#">Covid-19</a>
+                <a href="" className="nav-link" >Covid-19</a>
               </li>
               <li className="nav-item">
                 <a href="" className="nav-link">News</a>
