@@ -20,7 +20,7 @@ const ExploreComponent = () => {
                 <a className="nav-link active" aria-current="page" href="#">For You</a>
               </li>
               <li className="nav-item">
-                <a href=""  className="nav-link" >Trending</a>
+                <a href=""  className="nav-link" href="#">Trending</a>
               </li>
               <li className="nav-item">
                 <a href="" className="nav-link" >Covid-19</a>
