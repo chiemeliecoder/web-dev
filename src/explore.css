@@ -385,9 +385,10 @@ html, body {
 
 .wd-bottom-lefts {
     position: absolute;
-    bottom: 400px;
-    left:525px
+    bottom: 170px;
+    left:329px
 }
+
 
 ul {
     padding: 0px;

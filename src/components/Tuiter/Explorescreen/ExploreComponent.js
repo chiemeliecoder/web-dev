@@ -14,6 +14,7 @@ const ExploreComponent = () => {
                       </div>
                       <div className="col-1"><i className="fa fa-cog fa-2x wd-color-cog wd-side-cog "></i></div>
            </div>
+          <div className="row">
            <ul className="nav mb-2 nav-tabs">
                {/* tabs */}
               <li className="nav-item">
@@ -35,6 +36,7 @@ const ExploreComponent = () => {
                 <a href="" className="nav-link">Entertainment</a>
               </li>
            </ul>
+          </div>
            {/*image with overlaid text*/}
            <div>
            <img className="img-fluid rounded mx-auto" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" width="100%" />
