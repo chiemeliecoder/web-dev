@@ -164,6 +164,18 @@ html, body {
     height: 100%;
 
 }
+
+.wd-width{
+    width: 100%
+}
+
+.wd-transparent{
+    background-color: transparent;
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    outline: none;
+}
 .hr{
     color: rgb(47, 51, 54);
 }
