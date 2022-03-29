@@ -1,7 +1,7 @@
-import profile from "../Data/profile.json"
+import profileData from "../Data/profile.json"
 
 
-const ProfileReducer= (state = profile, action)=>{
+const ProfileReducer= (state = profileData, action)=>{
   switch (action.type) {
     case 'save':
       //console.log(action.profile)

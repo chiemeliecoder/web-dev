@@ -1,9 +1,22 @@
 import {useDispatch, useSelector} from "react-redux";
 import {useState} from "react";
-import {useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom";
 
 
-const EditProfile = ({profile}) => {
+
+const EditProfile = ({profile = {"firstName": "Chiemelie",
+                                      "lastName": "Ezeokeke",
+                                      "handle": "cmelie",
+                                      "tweet": "106 Tweets",
+                                      "profilePicture": "https://images.saymedia-content.com/.image/t_share/MTc5NjQ1ODEzMTgwNDA5ODE2/the-tragedy-of-eren-yeager-how-the-character-changes-throughout-attack-on-titan.png",
+                                      "bannerPicture": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Best-Programming-Languages-to-Start-Learning-Today.jpg",
+                                      "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast.Retuits and likes are not endorsements",
+                                      "website": "youtube.com/webdevtv",
+                                      "location": "Boston, MA",
+                                      "dob": "7/7/1968",
+                                      "dateJoined": "4/2009",
+                                      "followingCount": "312",
+                                      "followersCount": "180"}}) => {
   const dispatch = useDispatch();
   const profiles = useSelector(state => state.profiles);
 
@@ -31,7 +44,7 @@ const EditProfile = ({profile}) => {
           <div className="col-1">
             {/*<i onClick={() => deleteProfile(profile)}*/}
             <i onClick={closeProfile}
-               className="fas fa-remove fa-2x fa-pull-right"></i>
+    className="fas fa-remove fa-2x fa-pull-right"/>
           </div>
 
           <div className="col-10">
