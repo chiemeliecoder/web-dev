@@ -1,22 +1,17 @@
 import React from "react";
 import {useSelector} from "react-redux";
-import ProfileReducer from "../Reducers/ProfileReducer";
 import ProfileListItem from "./ProfileListItem"
+import ProfileReducer from "../Reducers/ProfileReducer";
 
 const ProfileList = () => {
-  const profile = useSelector(
-      state => state.profile);
-
+  const profiles = useSelector(state => state.profiles);
   return(
       <div>
-        {profile && profile.map && profile.map((profile) =>
+        {profiles && profiles.map && profiles.map((profile) =>
             <ProfileListItem profile={profile}/>)
         }
       </div>
-
-  )
-
-
+  );
 }
 
 export default ProfileList;
