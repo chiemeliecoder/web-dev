@@ -17,7 +17,7 @@ const ProfileListItem = ({profile})=> {
 
           <div className="col-11">
             <div className="pb-2 wd-font-white wd-font-size3">
-              {profile.firstName}
+              {profile.firstName} {profile.lastName}
               <div className="wd-font-color wd-font-size">{profile.tweet}</div>
             </div>
 
