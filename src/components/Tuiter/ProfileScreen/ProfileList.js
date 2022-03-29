@@ -4,7 +4,8 @@ import ProfileListItem from "./ProfileListItem"
 import ProfileReducer from "../Reducers/ProfileReducer";
 
 const ProfileList = () => {
-  const profiles = useSelector(state => state.profiles);
+  const profiles = useSelector(state => state.profile);
+  console.log(profiles);
   return(
       <div>
         {profiles && profiles.map && profiles.map((profile) =>
@@ -13,6 +14,7 @@ const ProfileList = () => {
       </div>
   );
 }
+
 
 export default ProfileList;
 

@@ -5,7 +5,8 @@ const ProfileScreen = () => {
   return(
       <div>
 
-        <ProfileList active="Profile"/>
+        <ProfileList/>
+
 
 
       </div>

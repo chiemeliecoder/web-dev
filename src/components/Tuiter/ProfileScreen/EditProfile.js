@@ -18,7 +18,7 @@ const EditProfile = ({profile = {"firstName": "Chiemelie",
                                       "followingCount": "312",
                                       "followersCount": "180"}}) => {
   const dispatch = useDispatch();
-  const profiles = useSelector(state => state.profiles);
+  const profiles = useSelector(state => state.profile);
 
 
   let [fullName, setFullName] = useState(profiles[0].fullName)
