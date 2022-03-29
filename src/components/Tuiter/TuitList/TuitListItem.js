@@ -26,8 +26,9 @@ const TuitListItem = (
 
                           }) => {
   const dispatch = useDispatch();
-  const deleteTuit = (tuits) =>{ dispatch({type: 'delete-tuit', tuits})
-                                  };
+  const deleteTuit = (tuits) => dispatch({type: 'delete-tuit', tuits})
+
+
                           return(
                               <div>
                                 <ul className="list-group">

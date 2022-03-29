@@ -5,7 +5,7 @@ const TuitsReducer = (state = tuits, action) => {
   switch (action.type){
     case 'delete-tuit':
       return state.filter(
-          tuit => tuit._id !== action.tuit._id);
+          tuit => tuit._id !== action.tuits._id);
 
     case 'like-tuit':
       return state.map(tuit => {
