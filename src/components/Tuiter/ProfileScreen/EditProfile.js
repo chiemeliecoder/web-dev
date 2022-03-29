@@ -52,7 +52,7 @@ const EditProfile = ({profile = {"firstName": "Chiemelie",
           </div>
           <div className="col-1">
             <button onClick={saveHandler}
-                    className="float-end btn float-end wd-rounded-corners bg-white wd-bolded-font ed-font-black">
+                    className="float-end btn btn-primary rounded-pill float-end wd-rounded-corners  wd-bolded-font ed-font-black">
               Save
             </button>
           </div>
@@ -70,31 +70,31 @@ const EditProfile = ({profile = {"firstName": "Chiemelie",
 
         <div className="wd-content-goes-up">
           <text>Name</text>
-          <textarea className="wd-textarea-width bg-black wd-font-white"
+          <textarea className="wd-width bg-transparent wd-selector wd-font-white"
                     value={fullName} onChange={(event) =>
               setFullName(event.target.value)}>
                 </textarea>
           <br/>
           <text>Bio</text>
-          <textarea className="wd-textarea-width bg-black wd-font-white"
+          <textarea className="wd-width bg-transparent wd-selector wd-font-white"
                     value={bio} onChange={(event) =>
               setBio(event.target.value)}>
                 </textarea>
           <br/>
           <text>Location</text>
-          <textarea className="wd-textarea-width bg-black wd-font-white"
+          <textarea className="wd-width bg-transparent wd-selector wd-font-white"
                     value={location} onChange={(event) =>
               setLocation(event.target.value)}>
                 </textarea>
           <br/>
           <text>Website</text>
-          <textarea className="wd-textarea-width bg-black wd-font-white"
+          <textarea className="wd-width bg-transparent wd-selector wd-font-white"
                     value={website} onChange={(event) =>
               setwebsite(event.target.value)}>
                 </textarea>
           <br/>
           <text>Date of Birth</text>
-          <textarea className="wd-textarea-width bg-black wd-font-white"
+          <textarea className="wd-width bg-transparent wd-selector wd-font-white"
                     value={dob} onChange={(event) =>
               setDob(event.target.value)}>
                 </textarea>

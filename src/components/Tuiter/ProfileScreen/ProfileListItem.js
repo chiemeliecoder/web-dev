@@ -16,10 +16,9 @@ const ProfileListItem = ({profile})=> {
           </div>
 
           <div className="col-11">
-            <div className="pb-2 wd-font-white" style={{fontSize: '20px'}}>
-              {profile.fullName}
-              <div className="wd-font-color"
-                   style={{fontSize: '12px'}}>{profile.tweet}</div>
+            <div className="pb-2 wd-font-white wd-font-size3">
+              {profile.firstName}
+              <div className="wd-font-color wd-font-size">{profile.tweet}</div>
             </div>
 
           </div>
@@ -27,18 +26,19 @@ const ProfileListItem = ({profile})=> {
         </div>
 
         <Link to="/tuiter/editProfile"
-              className="btn float-end mt-2 wd-rounded-corners bg-black wd-border-color-grey wd-bolded-font wd-font-white">
+              className="btn btn-primary rounded-pill float-end mt-2 wd-rounded-corners  wd-border-color-grey wd-bolded-font wd-font-white">
           Edit Profile</Link>
 
         <img
             className="wd-image-border wd-relative-position-profile wd-rounded-corners"
             height="100" width="100" src={profile.profilePicture}/>
 
+            <h3>{profile.firstName} {profile.lastName}</h3>
         <h6 className="wd-relative-profile-name wd-profile-name-style wd-font-white">
           {profile.fullName}
         </h6>
         <text
-            className="wd-relative-profile-handle wd-font-grey">{profile.handle}</text>
+            className="wd-relative-profile-handle wd-font-grey">@{profile.handle}</text>
 
 
         <h6 className="wd-relative-profile-bio pb-2">{profile.bio}</h6>
