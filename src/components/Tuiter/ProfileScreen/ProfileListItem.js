@@ -33,10 +33,10 @@ const ProfileListItem = ({profile})=> {
             className="wd-image-border wd-relative-position-profile wd-rounded-corners"
             height="100" width="100" src={profile.profilePicture}/>
 
-            <h3>{profile.firstName} {profile.lastName}</h3>
-        <h6 className="wd-relative-profile-name wd-profile-name-style wd-font-white">
-          {profile.fullName}
-        </h6>
+
+        <h5 className="wd-relative-profile-name wd-profile-name-style wd-font-white">
+          {profile.firstName} {profile.lastName}
+        </h5>
         <text
             className="wd-relative-profile-handle wd-font-grey">@{profile.handle}</text>
 
