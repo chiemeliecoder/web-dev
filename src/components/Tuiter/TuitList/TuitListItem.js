@@ -29,9 +29,11 @@ const TuitListItem = (
   const deleteTuit = (tuits) =>{ dispatch({type: 'delete-tuit', tuits})
                                   };
                           return(
+                              <div>
+                                <ul className="list-group">
 
-
-                                      <div className="mt-2 wd-flex">
+                                  <li className="list-group-item">
+                                    <div className="mt-2 wd-flex">
                                         <div>
                                           <img className="wd-rounded-corners-circle" src={tuits.avatar_image} width="48px" height="48px"/>
                                         </div>
@@ -50,30 +52,21 @@ const TuitListItem = (
                                             </div>
                                           </div>
                                           <div className="wd-rounded-corners-all-around wd-hr2">
-                                            <img className="wd-rounded-corners-all-around" src={tuits.attachments} width="100%"/>
+                                            {tuits.attachments && tuits.attachments.image &&
+                                            <img className="wd-rounded-corners-all-around" src={tuits.attachments.image} width="100%" height= "100%"/>}
+
+                                            {tuits.attachments && tuits.attachments.video &&
+                                            <iframe className="wd-rounded-corners-small wd-video-dimension w-100 d-flex position-relative" src={`https://www.youtube.com/embed/${tuits.attachments.video}`}/>}
                                           </div>
                                           <div className="wd-social-icon-wrapper wd-flex p-2">
-                                            <a  href="#" className="wd-color-red-selected">
-                                              <i className="fa-solid fa-heart"/>
-                                              <span>{tuits.likes}</span>
-                                            </a>
-
-                                            <a href="{posts.url}">
-                                              <i className="fa-solid fa-comment"/>
-                                              <span>{tuits.comments}</span>
-                                            </a>
-
-                                            <a href="{posts.url}">
-                                              <i className="fa-solid fa-retweet"/>
-                                              <span>{tuits.retuits}</span>
-                                            </a>
-
-                                            <a href="{posts.url}">
-                                              <i className="fa-solid fa-arrow-up-from-bracket"/>
-                                            </a>
+                                            <TuitStats tuits={tuits}/>
                                           </div>
                                         </div>
-                                      </div>);
+                                      </div>
+                                  </li>
+                                </ul>
+                              </div>
+                                );
 
 };
 

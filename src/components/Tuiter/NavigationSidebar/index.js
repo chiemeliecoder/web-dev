@@ -7,7 +7,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
             <div className="list-group">
                 <Link  className="list-group-item" to="/"><i className="fab fa-twitter"></i></Link>
 
-                <Link to="/tuiter/home" className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ""}`}><i className="fa fa-house-user"></i><span className="d-none d-sm d-xl-inline-block">Home</span></Link>
+                <Link to="/tuiter" className={`list-group-item list-group-item-action ${active === 'home' ? 'active' : ""}`}><i className="fa fa-house-user"></i><span className="d-none d-sm d-xl-inline-block">Home</span></Link>
                 <Link to="/tuiter/explore" className={`list-group-item list-group-item-action ${active === 'explorer' ? 'active' : ""}`}><i className="fa fa-hashtag"></i><span className="d-none d-sm d-xl-inline-block"> Explore</span></Link>
                 <Link to="notification.html" className="list-group-item list-group-item-action"><i className="fa fa-bell"></i><span className="d-none d-sm  d-xl-inline-block"> Notification</span></Link>
                 <Link to="message.html" className="list-group-item list-group-item-action"><i className="fa fa-envelope"></i><span className="d-none d-sm d-xl-inline-block"> Message</span></Link>

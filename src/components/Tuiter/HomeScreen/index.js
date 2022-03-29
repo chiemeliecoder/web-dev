@@ -1,5 +1,5 @@
 import WhatsHappening from "./WhatsHappening";
-import TuitList from "../../TuitList/TuitList";
+import TuitList from "../TuitList/TuitList";
 
 const HomeScreen = () => {
   return(

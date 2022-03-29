@@ -7,7 +7,8 @@ import HelloWorld from "./components/HelloWorld";
 import Index from "./components/Labs";
 import Tuiter from "./components/Tuiter/Tuiter";
 import ExploreScreen from "./components/Tuiter/Explorescreen/ExploreScreen";
-import HomeScreen from "./components/Tuiter/HomeScreen/index.js"
+import HomeScreen from "./components/Tuiter/HomeScreen/index.js";
+import Profile from "./components/Tuiter/Profile/index";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
@@ -16,11 +17,13 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/">
+              <Route index element={<Index/>}/>
               <Route path="labs" element={<Index/>}/>
               <Route path="hello" element={<HelloWorld/>}/>
               <Route path="tuiter" element={<Tuiter/>}>
                 <Route index element={<HomeScreen/>}/>
                 <Route path="explore"  element={<ExploreScreen/>}/>
+                <Route path="profile" element={<Profile/>}/>
                 </Route>
               </Route>
 

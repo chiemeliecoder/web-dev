@@ -426,3 +426,24 @@ ul {
     text-decoration: none;
     color: grey;
 }
+
+.wd-font-weight{
+    font-weight: bold;
+}
+
+.wd-move-lefts {
+    position: absolute;
+    left:100px
+}
+
+.wd-move-lefts2 {
+    position: absolute;
+    left:200px
+}
+
+.wd-move-lefts3 {
+    position: absolute;
+    left:480px
+}
+
+

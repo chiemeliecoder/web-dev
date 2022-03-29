@@ -21,7 +21,7 @@ const ExploreComponent = () => {
                 <a className="nav-link active" aria-current="page" href="#">For You</a>
               </li>
               <li className="nav-item">
-                <a href=""  className="nav-link" href="#">Trending</a>
+                <a href=""  className="nav-link">Trending</a>
               </li>
               <li className="nav-item">
                 <a href="" className="nav-link" >Covid-19</a>
@@ -38,9 +38,9 @@ const ExploreComponent = () => {
            </ul>
           </div>
            {/*image with overlaid text*/}
-           <div>
+           <div className="position-relative">
+             <div className="fs-3 position-absolute wd-font-color left-0 bottom-0 ms-2 wd-font-weight">SpaceX's Starship</div>
            <img className="img-fluid rounded mx-auto" src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg" width="100%" />
-           <strong className="fs-3 wd-bottom-lefts wd-font-color">SpaceX's Starship</strong>
            </div>
        
            <PostSummaryList/>
