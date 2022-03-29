@@ -56,7 +56,7 @@ const TuitListItem = (
                                             <img className="wd-rounded-corners-all-around" src={tuits.attachments.image} width="100%" height= "100%"/>}
 
                                             {tuits.attachments && tuits.attachments.video &&
-                                            <iframe className="wd-rounded-corners-small wd-video-dimension w-100 d-flex position-relative" src={`https://www.youtube.com/embed/${tuits.attachments.video}`}/>}
+                                            <iframe className="wd-rounded-corners-all-around wd-video-dimension w-100 d-flex position-relative"  height="400px" src={`https://www.youtube.com/embed/${tuits.attachments.video}`}/>}
                                           </div>
                                           <div className="wd-social-icon-wrapper wd-flex p-2">
                                             <TuitStats tuits={tuits}/>

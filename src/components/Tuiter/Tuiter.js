@@ -26,18 +26,6 @@ const Tuiter = () =>{
         </div>
       </div>
       </Provider>
-      // <>
-      //   <NavigationSidebar active= "home"/>
-      //   <WhoToFollowList/>
-      //   <PostSummaryItem post={{
-      //     "topic": "Web Development",
-      //     "userName": "",
-      //     "title": "jQuery",
-      //     "time": "last week",
-      //     "image": "https://w7.pngwing.com/pngs/186/205/png-transparent-react-native-react-logos-brands-icon.png",
-      //     "tweets": "122K"
-      //   }}/>
-      // </>
   )
 };
 

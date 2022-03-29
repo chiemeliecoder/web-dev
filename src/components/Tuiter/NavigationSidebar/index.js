@@ -13,7 +13,7 @@ const NavigationSidebar = ({active = 'explore'}) => {
                 <Link to="message.html" className="list-group-item list-group-item-action"><i className="fa fa-envelope"></i><span className="d-none d-sm d-xl-inline-block"> Message</span></Link>
                 <Link to="bookmarks.html" className="list-group-item list-group-item-action"><i className="fa fa-bookmark"></i><span className="d-none d-sm d-xl-inline-block"> Bookmarks</span></Link>
                 <Link to="lists.html" className="list-group-item list-group-item-action"><i className="fa fa-list"></i><span className="d-none d-sm  d-xl-inline-block"> List</span></Link>
-                <Link to="profile.html"className="list-group-item list-group-item-action"><i className="fa fa-user"></i><span className="d-none d-sm  d-xl-inline-block"> Profile</span></Link>
+                <Link to="/tuiter/profile"className="list-group-item list-group-item-action"><i className="fa fa-user"></i><span className="d-none d-sm  d-xl-inline-block"> Profile</span></Link>
                 <Link to="#"className="list-group-item list-group-item-action"><i className="fa fa-caret-down"></i><span className="d-none d-sm d-xl-inline-block"> More</span></Link>
             </div>
             <div className="d-grid mt-2">
