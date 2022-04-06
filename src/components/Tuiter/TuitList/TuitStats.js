@@ -1,5 +1,6 @@
 import {useDispatch} from "react-redux";
 import React from "react";
+import {updateTuit} from "../../actions/TuitsActions";
 
 const TuitStats = ({tuits}) => {
   const dispatch = useDispatch();
@@ -11,7 +12,6 @@ const TuitStats = ({tuits}) => {
         <div className="wd-move-lefts">
           <a href="#">
             <i className="fa-solid fa-comment"/>
-            <span>{tuits.stats.comments}</span>
           </a>
         </div>
         <div className="wd-move-lefts2">
@@ -31,13 +31,21 @@ const TuitStats = ({tuits}) => {
         <div>
           <a href="#">
             <i className="fa-solid fa-retweet"></i>
-            <span>{tuits.stats.retuits}</span>
           </a>
         </div>
         <div className="wd-move-lefts3">
           <a href="#">
             <i className="fa-solid fa-arrow-up-from-bracket"></i>
           </a>
+        </div>
+        <div>
+          Likes: {tuits.likes}
+          <i onClick={() => updateTuit(dispatch, {...tuits, likes: tuits.likes + 1})} className="far fa-thumbs-up ms-2"/>
+        </div>
+
+        <div>
+          Dislikes: {tuits.dislikes}
+          <i onClick={() => updateTuit(dispatch, {...tuits, dislikes: tuits.dislikes + 1})} className="far fa-thumbs-down ms-2"/>
         </div>
       </div>
 );

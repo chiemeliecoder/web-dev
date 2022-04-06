@@ -1,6 +1,7 @@
 import {useDispatch} from "react-redux";
 import TuitStats from "./TuitStats";
 import React from "react";
+import {deleteTuit} from "../../actions/TuitsActions";
 
 const TuitListItem = (
                           {
@@ -27,6 +28,7 @@ const TuitListItem = (
                           }) => {
   const dispatch = useDispatch();
   const deleteTuit = (tuits) => dispatch({type: 'delete-tuit', tuits})
+  console.log(tuits);
 
 
                           return(
@@ -41,9 +43,7 @@ const TuitListItem = (
 
                                         <div className="ps-3">
                                           <div>
-                                            <i onClick={() =>
-                                                deleteTuit(tuits)}
-                                               className="fas fa-remove fa-2x fa-pull-right"/>
+                                            <i className="fas fa-remove float-end" onClick={() => deleteTuit(dispatch, tuits)}/>
                                           </div>
                                           <div className="">
                                             <strong className="wd-font-color wd-font-size3">{tuits.postedBy.username}</strong><span className="wd-font-color wd-side2"><i className="fa-solid fa-certificate"></i></span><span className="wd-selector wd-side">@{tuits.handle} {tuits.time}</span>
