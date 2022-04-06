@@ -27,7 +27,7 @@ const TuitListItem = (
 
                           }) => {
   const dispatch = useDispatch();
-  const deleteTuit = (tuits) => dispatch({type: 'delete-tuit', tuits})
+
   console.log(tuits);
 
 
@@ -46,8 +46,8 @@ const TuitListItem = (
                                             <i className="fas fa-remove float-end" onClick={() => deleteTuit(dispatch, tuits)}/>
                                           </div>
                                           <div className="">
-                                            <strong className="wd-font-color wd-font-size3">{tuits.postedBy.username}</strong><span className="wd-font-color wd-side2"><i className="fa-solid fa-certificate"></i></span><span className="wd-selector wd-side">@{tuits.handle} {tuits.time}</span>
-                                            <span className="wd-selector wd-space"><i className="fa-solid fa-ellipsis"></i></span>
+                                            <strong className="wd-font-color wd-font-size3">{tuits.username}</strong><span className="wd-font-color wd-side2"><i className="fa-solid fa-certificate"></i></span><span className="wd-selector wd-side">@{tuits.handle} {tuits.time}</span>
+                                            <span className="wd-selector wd-space2"><i className="fa-solid fa-ellipsis"></i></span>
                                             <div className="wd-width-text wd-bottom wd-font-color ">
                                               {tuits.tuit}
                                             </div>

@@ -19,7 +19,7 @@ const WhatsHappening = () => {
             <img className="wd-rounded-corners-circle" height="50" width="50" src="https://images.saymedia-content.com/.image/t_share/MTc5NjQ1ODEzMTgwNDA5ODE2/the-tragedy-of-eren-yeager-how-the-character-changes-throughout-attack-on-titan.png"/>
           </div>
           <div className="col-11">
-            <textarea className="wd-width wd-transparent wd-selector" placeholder="What's happening?" value={whatsHappening}
+            <textarea className="wd-width wd-transparent wd-selector" placeholder="What's happening?"
                       onChange={(e) =>
                           setNewTuit({
                             ...newTuit,

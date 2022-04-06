@@ -360,6 +360,10 @@ html, body {
     padding-left: 210px;
 }
 
+.wd-space2{
+    padding-left: 250px;
+}
+
 .wd-pads-up-right {
     padding-bottom: 12px;
     padding-right: 12px;
@@ -438,12 +442,27 @@ ul {
 
 .wd-move-lefts2 {
     position: absolute;
-    left:200px
+    left:170px
 }
 
 .wd-move-lefts3 {
     position: absolute;
-    left:480px
+    left:580px
 }
 
 
+.wd-move-lefts4 {
+    position: absolute;
+    left:450px
+}
+
+.wd-move-lefts5 {
+    position: absolute;
+    left:300px
+}
+
+
+.wd-move-lefts6 {
+    position: absolute;
+    left:250px
+}
