@@ -1,0 +1,74 @@
+import {useDispatch} from "react-redux";
+import TuitStats from "./TuitStats";
+import React from "react";
+import {deleteTuit} from "../../actions/TuitsActions";
+
+const TuitListItem = (
+                          {
+                            tuits = {"_id": "123", "topic": "Web Development", "postedBy": {
+                                              "username": "SpaceX"
+                                            },
+                                            "liked": true,
+                                            "verified": false,
+                                            "handle": "ReactJS",
+                                            "time": "2h",
+                                            "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+                                            "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                                            "attachments": {
+                                              "image": "../images/starship.png"
+                                            },
+                                            "logo_image": "../../../images/react-blue.png",
+                                            "avatar_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc2Y2gmQB5zuaBd1AfN_AyEgoTgxPF65i7GwlvrbnnP_RUlubieG19WFnonCtS4ZfAox4&usqp=CAU",
+                                              "stats": {
+                                              "comments": "123",
+                                              "retuits": "234",
+                                              "likes": "345"}
+                                      }
+
+                          }) => {
+  const dispatch = useDispatch();
+
+  console.log(tuits);
+
+
+                          return(
+                              <div>
+                                <ul className="list-group">
+
+                                  <li className="list-group-item">
+                                    <div className="mt-2 wd-flex">
+                                        <div>
+                                          <img className="wd-rounded-corners-circle" src={tuits.avatar_image} width="48px" height="48px"/>
+                                        </div>
+
+                                        <div className="ps-3">
+                                          <div>
+                                            <i className="fas fa-remove float-end" onClick={() => deleteTuit(dispatch, tuits)}/>
+                                          </div>
+                                          <div className="">
+                                            <strong className="wd-font-color wd-font-size3">{tuits.username}</strong><span className="wd-font-color wd-side2"><i className="fa-solid fa-certificate"></i></span><span className="wd-selector wd-side">@{tuits.handle} {tuits.time}</span>
+                                            <span className="wd-selector wd-space2"><i className="fa-solid fa-ellipsis"></i></span>
+                                            <div className="wd-width-text wd-bottom wd-font-color ">
+                                              {tuits.tuit}
+                                            </div>
+                                          </div>
+                                          <div className="wd-rounded-corners-all-around wd-hr2">
+                                            {tuits.attachments && tuits.attachments.image &&
+                                            <img className="wd-rounded-corners-all-around" src={tuits.attachments.image} width="100%" height= "100%"/>}
+
+                                            {tuits.attachments && tuits.attachments.video &&
+                                            <iframe className="wd-rounded-corners-all-around wd-video-dimension w-100 d-flex position-relative"  height="400px" src={`https://www.youtube.com/embed/${tuits.attachments.video}`}/>}
+                                          </div>
+                                          <div className="wd-social-icon-wrapper wd-flex p-2">
+                                            <TuitStats tuits={tuits}/>
+                                          </div>
+                                        </div>
+                                      </div>
+                                  </li>
+                                </ul>
+                              </div>
+                                );
+
+};
+
+export default  TuitListItem;
