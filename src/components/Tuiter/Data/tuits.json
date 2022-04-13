@@ -1,0 +1,113 @@
+[
+  {
+    "_id": "123",
+    "topic": "Web Development",
+    "postedBy": {
+      "username": "ReactJS"
+    },
+    "liked": true,
+    "verified": false,
+    "handle": "ReactJS",
+    "time": "2h",
+    "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "attachments": {
+      "video": "unKvMC3Y1kI"
+    },
+    "logo_image": "../../../images/react-blue.png",
+    "avatar_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc2Y2gmQB5zuaBd1AfN_AyEgoTgxPF65i7GwlvrbnnP_RUlubieG19WFnonCtS4ZfAox4&usqp=CAU",
+    "stats": {
+      "comments": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  },
+  {
+    "_id": "567",
+    "topic": "Space",
+    "postedBy": {
+      "username": "SpaceX"
+    },
+    "liked": false,
+    "verified": false,
+    "handle": "spacex",
+    "title": "",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "attachments": {
+      "image": "https://www.reuters.com/resizer/jcYClXzKnw_cTuUVSok1K_WnOTI=/960x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/E7WXYTHMD5NCVCWK23WQPVSX7Y.jpg"
+    },
+    "time": "last month",
+    "logo_image": "../../../images/node.png",
+    "avatar_image": "https://content.fortune.com/wp-content/uploads/2020/08/GettyImages-1219672105_web.jpg",
+    "tuits": "120K",
+    "stats": {
+      "comments": 123,
+      "retuits": 400,
+      "likes": 345
+    }
+  },
+  {
+    "_id": "234",
+    "topic": "Space",
+    "postedBy": {
+      "username": "Scott Manley"
+    },
+    "liked": true,
+    "verified": true,
+    "handle": "DJSnM",
+    "postedOn": "2020-12-10",
+    "time": "1 day",
+    "title": "JavaScript is programming language that can run on browsers as well as desktops",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "logo_image": "../../../images/js.png",
+    "avatar_image": "https://preview.redd.it/zyojjcs968g01.jpg?width=640&crop=smart&auto=webp&s=6c9f0ff650bb8fa9077c5780ac78efaafafa33d6",
+    "tuits": "123K",
+    "stats": {
+      "comments": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  },
+  {
+    "_id": "345",
+    "topic": "Web Development",
+    "postedBy": {
+      "username": "jQuery"
+    },
+    "liked": false,
+    "verified": false,
+    "handle": "jQuery",
+    "title": "jQuery",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "time": "last week",
+    "logo_image": "../../../images/jquery.png",
+    "avatar_image": "https://mpng.subpng.com/20180704/zoa/kisspng-jquery-ui-javascript-web-browser-pasargad-5b3d093837a4d4.5712269815307267122279.jpg",
+    "tuits": "122K",
+    "stats": {
+      "comments": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  },
+  {
+    "_id": "456",
+    "topic": "Web Development",
+    "postedBy": {
+      "username": "NodeJS"
+    },
+    "liked": true,
+    "verified": true,
+    "handle": "NodeJS",
+    "title": "",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    "time": "last month",
+    "logo_image": "../../../images/node.png",
+    "avatar_image": "https://media.istockphoto.com/vectors/nodejs-vector-logo-backend-programming-in-javascript-server-vector-id1195857274?k=20&m=1195857274&s=170667a&w=0&h=k8oHsv3ehrvhviozLlvhEjGHweiHU7hbBv7bHEkgUqc=",
+    "tuits": "120K",
+    "stats": {
+      "comments": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  }
+]
