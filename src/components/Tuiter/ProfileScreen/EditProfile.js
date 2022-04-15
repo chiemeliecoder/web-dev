@@ -6,6 +6,7 @@ import {useNavigate} from "react-router-dom";
 
 const EditProfile = ({profile = {"firstName": "Chiemelie",
                                       "lastName": "Ezeokeke",
+                                      "fullName": "Chiemelie Ezeokeke",
                                       "handle": "cmelie",
                                       "tweet": "106 Tweets",
                                       "profilePicture": "https://images.saymedia-content.com/.image/t_share/MTc5NjQ1ODEzMTgwNDA5ODE2/the-tragedy-of-eren-yeager-how-the-character-changes-throughout-attack-on-titan.png",

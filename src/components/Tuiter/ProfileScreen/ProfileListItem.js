@@ -17,7 +17,7 @@ const ProfileListItem = ({profile})=> {
 
           <div className="col-11">
             <div className="pb-2 wd-font-white wd-font-size3">
-              {profile.firstName} {profile.lastName}
+              {profile.fullName}
               <div className="wd-font-color wd-font-size">{profile.tweet}</div>
             </div>
 
@@ -35,7 +35,7 @@ const ProfileListItem = ({profile})=> {
 
 
         <h5 className="wd-relative-profile-name wd-profile-name-style wd-font-white">
-          {profile.firstName} {profile.lastName}
+          {profile.fullName}
         </h5>
         <text
             className="wd-relative-profile-handle wd-font-grey">@{profile.handle}</text>
